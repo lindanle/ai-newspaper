@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous AI News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-8 border-b border-slate-800 pb-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-extrabold text-blue-400">AI Hourly Radar</h1>
+        <p class="text-xs text-slate-400 mt-1">Autonomous feed updated hourly.</p>
+      </div>
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Auto-Syncing
+      </span>
+    </header>
+
+    <main id="news-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="col-span-2 text-center text-slate-500 py-10">Fetching the latest dispatch...</div>
+    </main>
+  </div>
+
+  <script>
+    async function loadNews() {
+      const container = document.getElementById('news-grid');
+      try {
+        const res = await fetch('news.json?' + new Date().getTime());
+        const articles = await res.json();
+        container.innerHTML = articles.map(art => `
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">${art.category || 'AI Update'}</span>
+              <h2 class="text-lg font-bold text-slate-100 mt-2 mb-2 leading-snug">${art.headline}</h2>
+              <p class="text-xs text-slate-300 mb-3">${art.summary}</p>
+              <div class="space-y-1 mb-4">
+                ${(art.takeaways || []).map(t => `<p class="text-[11px] text-slate-400">• ${t}</p>`).join('')}
+              </div>
+            </div>
+            <a href="${art.link}" target="_blank" class="text-xs font-semibold text-blue-400 hover:underline">Read Source &rarr;</a>
+          </div>
+        `).join('');
+      } catch (e) {
+        container.innerHTML = '<div class="col-span-2 text-center text-slate-500">First issue generating soon...</div>';
+      }
+    }
+    loadNews();
+  </script>
+</body>
+</html>
