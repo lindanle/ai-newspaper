@@ -1,0 +1,52 @@
+[
+  {
+    "headline": "Airbnb Announces Plan to Launch AI Travel Agent by 2027",
+    "category": "Product Launch",
+    "summary": "Airbnb has announced plans to introduce an AI travel agent in the first half of 2027 to help users plan trips, compare options, and manage bookings. The tool is designed to provide ongoing assistance throughout a traveler's stay.",
+    "takeaways": [
+      "Airbnb's travel agent will assist with end-to-end trip planning and management.",
+      "The product is slated for release in the first half of 2027."
+    ],
+    "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/"
+  },
+  {
+    "headline": "Meta Introduces Video Calling for Muse AI Avatars in the US",
+    "category": "Product Launch",
+    "summary": "Meta's Muse AI agent can now participate in video calls as a customizable animated avatar for US users. This release precedes the rollout of a wearable device intended to integrate the AI agent into physical daily life.",
+    "takeaways": [
+      "US users can now video chat with customizable Muse AI avatars.",
+      "Meta plans to support the avatar with a Tamagotchi-like wearable device."
+    ],
+    "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/"
+  },
+  {
+    "headline": "Meta Warns Political Backlash Against Data Centers Could Impede AI Growth",
+    "category": "Policy & Ethics",
+    "summary": "Meta has cautioned that growing public and political opposition to massive data center projects could threaten future AI investments. Local pushback against infrastructure expansion is becoming a significant hurdle for Big Tech.",
+    "takeaways": [
+      "Political resistance to data centers is mounting in local communities.",
+      "Meta warns that this backlash could slow down future infrastructure and AI investments."
+    ],
+    "link": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/"
+  },
+  {
+    "headline": "Recent Political Shifts in Texas Threaten Major AI Data Center Hub",
+    "category": "Policy & Ethics",
+    "summary": "Texas, a major epicenter for Big Tech's data center buildouts, faces potential disruptions following recent political shifts. Electoral outcomes in the state could jeopardize its position as a fast-growing market for AI infrastructure.",
+    "takeaways": [
+      "Texas has been a primary hub for large-scale AI data center construction.",
+      "Recent political changes in the state threaten to alter the future of these infrastructure projects."
+    ],
+    "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+  },
+  {
+    "headline": "Researchers Explore Reverse Game Theory for AI Agent Alignment",
+    "category": "Research",
+    "summary": "Safety researchers are investigating 'reverse game theory' as a method to control powerful AI systems by incentivizing them to follow established rules. This approach aims to ensure that increasingly autonomous models remain aligned with human intentions.",
+    "takeaways": [
+      "Reverse game theory uses mechanism design to keep AI agents within safe operational boundaries.",
+      "The method addresses the challenge of aligning advanced, autonomous AI systems with human desires."
+    ],
+    "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/"
+  }
+]
