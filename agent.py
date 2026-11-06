@@ -63,7 +63,7 @@ def process_with_ai(stories, retries=4, delay=5):
     for attempt in range(1, retries + 1):
         try:
             response = client.models.generate_content(
-                model="gemini-3.8-flash",
+                model="gemini-3.5-flash-lite",
                 contents=prompt,
                 config={"response_mime_type": "application/json"}
             )
